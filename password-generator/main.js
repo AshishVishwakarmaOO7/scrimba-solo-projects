@@ -1,7 +1,7 @@
 const btn = document.getElementById("btn");
-const passwordFields = document.querySelectorAll(".password");
 const password1 = document.getElementById("password-1");
 const password2 = document.getElementById("password-2");
+const toggleMessage = document.getElementById("toggle-message");
 
 
 function randomPassword() {
@@ -20,3 +20,17 @@ btn.onclick = () => {
   password2.textContent = randomPassword();
 }
 
+password1.onclick = password2.onclick = function() {
+  if (this.textContent === "") {
+    toggleMessage.textContent = "Generate password first";
+  } else {
+    toggleMessage.textContent = "Password Copied";
+  }
+
+  navigator.clipboard.writeText(this.innerText);
+  toggleMessage.style.visibility = "visible";
+
+  setTimeout(() => {
+    toggleMessage.style.visibility = "hidden";
+  }, 2000);
+}

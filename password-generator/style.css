@@ -19,6 +19,7 @@ body {
   padding: 2rem;
   padding: 4rem 3rem;
   border-radius: 2%;
+  position: relative;
 }
 
 h1 {
@@ -60,6 +61,7 @@ p {
   border-radius: 5px;
   width: 47%;
   background: #273549;
+  cursor: pointer;
 }
 
 hr {
@@ -69,4 +71,17 @@ hr {
 
 .color-4ADF86 {
   color: #4ADF86;
+}
+
+#toggle-message {
+  padding: 5px 10px;
+  border: 1px solid #10B981;
+  width: fit-content;
+  border-radius: 5px;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
 }
