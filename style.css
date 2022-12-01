@@ -26,7 +26,7 @@ body::before {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   margin: 2rem auto;
   width: fit-content;
   color: #fff;
@@ -41,7 +41,7 @@ h1 {
 .project-item {
   margin: 1rem auto;
   max-width: 600px;
-  width: 100%;
+  width: 80%;
   background: #fff;
   border-radius: 0.5rem;
   transition: all .2s;
@@ -49,13 +49,13 @@ h1 {
 
 .project-item a {
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: .8rem;
 }
 
 .project-item:hover {
@@ -76,7 +76,7 @@ footer {
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin-top: 5px auto;
+  margin-top: 5px;
 }
 
 .cil li {
@@ -88,4 +88,10 @@ footer {
   text-decoration: none;
   border-bottom: 1px solid;
   color: #fff
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 10px;
+  }
 }

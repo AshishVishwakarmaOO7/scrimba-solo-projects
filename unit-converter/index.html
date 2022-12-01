@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter | Scrimba Solo Porjects</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-top">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input type="number" name="user-input" id="user-input" />
+        <button id="btn-convert">Convert</button>
+      </div>
+      <div class="container-bottom">
+        <div class="output-log">
+          <h2>Length (Meter/Feet)</h2>
+          <span class="output-msg" id="length-output">0 meters = 0.000 feet | 0 feet = 0.000 meter</span>
+        </div>
+        <div class="output-log">
+          <h2>Volume (Liters/Gallons)</h2>
+          <span class="output-msg" id="volume-output">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</span>
+        </div>
+        <div class="output-log">
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <span class="output-msg" id="mass-output">0 Kilos = 0.000 pounds | 0 pounds = 0.000</span>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
